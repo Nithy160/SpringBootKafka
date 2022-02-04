@@ -23,7 +23,7 @@ public class KafkaConfig extends KafkaPractiseApplication {
 	public ProducerFactory<String, User> producerFactoryBeanForUser()
 	{
 		Map<String , Object > configs = new HashMap();
-		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.43.39:9092");
+		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.xxx.xx.xx:9092");
 		configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 		configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
 
@@ -42,7 +42,7 @@ public class KafkaConfig extends KafkaPractiseApplication {
 	public ProducerFactory<String, String> producerFactoryBean()
 	{
 		Map<String , Object > configs = new HashMap();
-		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.43.39:9092");
+		configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.xxx.xx.xx:9092");
 		configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 		configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 
